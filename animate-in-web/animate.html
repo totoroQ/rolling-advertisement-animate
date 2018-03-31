@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="cssAnimate.js"></script>    
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>动画</title>
+        <style type="text/css">
+            .container {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+            }
+            .item { 
+                width:80%;
+                height: 200px;
+                background-color: pink;
+                margin-top: 30px;
+                overflow: hidden;
+                border-radius: 20px;
+            }
+            .text {
+                margin: 20px;
+            }
+            #picItem {
+                width:80%;
+                height: 200px;
+                margin-top: 30px;
+                overflow: hidden;
+                position: relative;  /* 父元素添加定位属性 */
+            }
+            #pic {
+                position: absolute;  /* 脱离文档流，减少回流 */
+                width:100%;
+                top:0;
+                transform: translateY('0px');  /* 设置transform初始值 */
+
+                transition: transform 0.001s;  /* 动画效果 */
+                -ms-transition: transform 0.001s;  /* IE */
+                -moz-transition: transform 0.001s; /* Firefox */
+                -webkit-transition: transform 0.001s; /* Safari 和 Chrome */
+                -o-transition: transform 0.001s; /* Opera */
+
+            }
+        </style>
+    </head>
+ 
+    <body>
+        <div class="container">
+                <div class="item">
+                    <p class="text">文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+                </div>
+                <div class="item">
+                    <p class="text">文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+                </div>
+                <div class="item">
+                    <p class="text">文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+                </div>
+                <div class="item">
+                    <p class="text">文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+                </div>
+                <div class="item">
+                    <p class="text">文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+                </div>
+                <div id="picItem">
+                    <img src="cat.jpeg" alt="cat" id="pic"/>
+                </div>
+                <div class="item">
+                    <p class="text">文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+                </div>
+                <div class="item">
+                    <p class="text">文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+                </div>
+                <div class="item">
+                    <p class="text">文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+                </div>
+                <div class="item">
+                    <p class="text">文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+                </div>
+                <div class="item">
+                    <p class="text">文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+                </div>
+        </div>
+       
+    </body>
+</html>
